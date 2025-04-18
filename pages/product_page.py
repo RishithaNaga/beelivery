@@ -22,7 +22,7 @@ class ProductPage(BasePage):
 
     def add_cake(self):
         self.click(self.ADD_CAKE)
-        self.driver.save_screenshot("C:\Proveway\pythonProject3\screenshots\screenshot_gourmet.png")
+        #self.driver.save_screenshot("C:\\Proveway\pythonProject3\screenshots\screenshot_gourmet.png")
         assert self.get_element(self.SIDE_PANEL_ITEM).text == "Gourmet Gold Savoury Cake Meat 8 x 85g (680g)"
 
     def increase_quantity(self, count):
